@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 hero">
+            <h1>Local, organic, artisan, handmade goods.</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Page Content -->
+    <div class="container">
+  
+      <hr>
+  
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>What We Do</h2>
+          <p></p>Church-key portland authentic unicorn, pickled try-hard venmo gochujang prism you probably haven't heard of them. Green juice brunch seitan, PBR&B franzen portland microdosing art party wolf tofu 8-bit letterpress gastropub kogi.</p>
+          <p></p>Bitters artisan ugh, raclette waistcoat four loko semiotics fanny pack before they sold out snackwave four dollar toast vexillologist.</p>
+          <p><button class="button">Contact Us</button></p>
+        </div>
+        <div class="col-sm-4">
+          <h2>Contact Us</h2>
+          <div>
+            <strong>Branch & Oak</strong>
+            <br />48151 Pine Road
+            <br />Portland, OR 62342
+            <br />
+            <br />
+          </div>
+          <div>
+            <abbr title="Phone">P: </abbr>(123) 456-7890
+            <br />
+            <abbr title="Email">E: </abbr> <a href="mailto:#">Email Us</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+  
+      <hr>
+  
+      <div class="row text-center">
+  
+        <div class="col-lg-12">
+          <h1>What we offer</h1>
+          <br />
+        </div>
+  
+        <div class="col-sm-4">
+          <img class="image image--circle image--center" src="https://source.unsplash.com/1w1OMV8CEeM/300x300" alt="">
+          <h2>Bespoke</h2>
+          <p>La croix vaporware viral vexillologist, flannel jianbing you probably haven't heard of them lomo selfies fixie banjo bespoke literally.</p>
+        </div>
+        <div class="col-sm-4">
+          <img class="image image--circle image--center" src="https://source.unsplash.com/MMtVD2ew1BA/300x300" alt="">
+          <h2>Gluten-Free</h2>
+          <p>Literally tacos tumeric heirloom fingerstache banjo green juice fashion axe locavore, freegan woke kogi vice photo booth.</p>
+        </div>
+        <div class="col-sm-4">
+          <img class="image image--circle image--center" src="https://source.unsplash.com/SK1_JK-ZHOo/300x300" alt="">
+          <h2>Farm to Table</h2>
+          <p>Helvetica pop-up raw denim, lomo godard tbh synth jean shorts. Aesthetic tumblr coloring book taco tofu.</p>
+        </div>
+      </div>
+      <!-- /.row -->
+  
+      <hr>
+  
+      <div class="row">
+  
+        <div class="col-lg-12 text-center">
+          <h1>Our Work</h1>
+          <br />
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <img class="image thumbnail" src="https://source.unsplash.com/5f4xGaQnM1E/400x300" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <img class="image thumbnail" src="https://source.unsplash.com/QYFi6t0P9Q0/400x300" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <img class="image thumbnail" src="https://source.unsplash.com/EHE7XUs9wb4/400x300" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <img class="image thumbnail" src="https://source.unsplash.com/UHFTNwaQg9o/400x300" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <img class="image thumbnail" src="https://source.unsplash.com/nJZbmL6pvDY/400x300" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <img class="image thumbnail" src="https://source.unsplash.com/TGYQVFiYpWw/400x300" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <img class="image thumbnail" src="https://source.unsplash.com/Gf4WV2qyW2U/400x300" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <img class="image thumbnail" src="https://source.unsplash.com/zG0_RnnxguY/400x300" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+
+    
+    <!-- /.container -->
+
+    <!--Contenido-->
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">        
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="box container">
+                    <div class="box-header with-border">
+                          <h1 class="box-title">Artículo <button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i> Agregar</button></h1>
+                        <div class="box-tools pull-right">
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <!-- centro -->
+                    <div class=" container panel-body table-responsive" id="listadoregistros">
+                      <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
+                        <thead>
+                          <th>Opciones</th>
+                          <th>Nombre</th>
+                          <th>Categoría</th>
+                          <th>Código</th>
+                          <th>Stock</th>
+                          <th>Imagen</th>
+                          <th>Estado</th>
+                        </thead>
+                        <tbody>
+                            <tr role="row" class="odd"><td class="sorting_1"><button class="btn btn-warning" onclick="mostrar(1)">Editar</button> <button class="btn btn-danger" onclick="desactivar(1)">Eliminar</button></td><td>Articulo 1</td><td>Bebidas  Gaseosa</td><td></td><td>165</td><td><img src="../files/articulos/1534163983.jpeg" height="50px" width="50px"></td><td><span class="label estado bg-green text-white">Activado</span></td></tr>                            
+                            <tr role="row" class="even"><td class="sorting_1"><button class="btn btn-warning" onclick="mostrar(2)">Editar</button> <button class="btn btn-danger" onclick="desactivar(2)">Eliminar</i></button></td><td>Cable Usb</td><td>Categoria 3</td><td>1304568</td><td>62</td><td><img src="../files/articulos/1535387611.jpg" height="50px" width="50px"></td><td><span class="label estado  bg-green text-white">Activado</span></td></tr>
+                        </tbody>
+                        <tfoot>
+                          <th>Opciones</th>
+                          <th>Nombre</th>
+                          <th>Categoría</th>
+                          <th>Código</th>
+                          <th>Stock</th>
+                          <th>Imagen</th>
+                          <th>Estado</th>
+                        </tfoot>
+                      </table>
+                  </div>
+                    <!-- centro -->
+                    <div class="panel-body" id="formularioregistros">
+                        <form name="formulario" id="formulario" method="POST">
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Nombre(*):</label>
+                            <input type="hidden" name="idarticulo" id="idarticulo">
+                            <input type="text" class="form-control" name="nombre" id="nombre" maxlength="100" placeholder="Nombre" required>
+                          </div>
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Categoría(*):</label>
+                            <select id="idcategoria" name="idcategoria" class="form-control selectpicker" data-live-search="true" required></select>
+                          </div>
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Stock(*):</label>
+                            <input type="number" class="form-control" name="stock" id="stock" required>
+                          </div>
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Descripción:</label>
+                            <input type="text" class="form-control" name="descripcion" id="descripcion" maxlength="256" placeholder="Descripción">
+                          </div>
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Imagen:</label>
+                            <input type="file" class="form-control" name="imagen" id="imagen">
+                            <input type="hidden" name="imagenactual" id="imagenactual">
+                            <img src="" width="150px" height="120px" id="imagenmuestra">
+                          </div>
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Código:</label>
+                            <input type="text" class="form-control" name="codigo" id="codigo" placeholder="Código Barras">
+                            <button class="btn btn-success" type="button" onclick="generarbarcode()">Generar</button>
+                            <button class="btn btn-info" type="button" onclick="imprimir()">Imprimir</button>
+                            <div id="print">
+                              <svg id="barcode"></svg>
+                            </div>
+                          </div>
+                          <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
+
+                            <button class="btn btn-danger" onclick="cancelarform()" type="button"><i class="fa fa-arrow-circle-left"></i> Cancelar</button>
+                          </div>
+                        </form>
+                    </div>
+                    <!--Fin centro -->
+                  </div><!-- /.box -->
+              </div><!-- /.col -->
+          </div><!-- /.row -->
+      </section><!-- /.content -->
+
+    </div><!-- /.content-wrapper -->
+  <!--Fin-Contenido-->
+  
+    <footer class="footer"></footer>
+  
+  </body>
+  
+  
+</html>

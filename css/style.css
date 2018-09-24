@@ -1,0 +1,1031 @@
+/*-----------------------------------------------
+Universidad de Carabobo 
+Facultad de Ciencia y Tecnologia (FACYT)
+Desarrollo Web
+
+TAREA DE HTML Y CSS
+
+Estilos Elaborados por Federico Yarza 
+CI 17.552.112
+-------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  position: relative;
+  border-radius: 3px;
+  background: #ffffff;
+  border-top: 3px solid #d2d6de;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.box-header.with-border {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.box-header>.fa,
+.box-header .box-title {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+
+.box-header>.box-tools {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.box-header {
+  color: #444;
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+
+/*--------------------------------------------
+Implementacion de Sistema de Columna con la 
+utilizacion del estilo del Container y 
+los estilo de la filas
+----------------------------------------------*/
+/* GRID */
+
+/* CONTAINER */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ROW */
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+/*--------------------------------------------
+ Ajustando el Tamano de la columnas en general
+ para que se ajuste a cualquier tamano de
+ dispositivos 
+---------------------------------------------*/
+
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*--------------------------------------------
+Ajustando las Columnas segun su cantidad
+-----------------------------------------------*/
+.col-xs-12 {
+  grid-column: span 12
+}
+
+.col-xs-11 {
+  grid-column: span 11;
+}
+
+.col-xs-10 {
+  grid-column: span 10
+}
+
+.col-xs-9 {
+  grid-column: span 9
+}
+
+.col-xs-8 {
+  grid-column: span 8
+}
+
+.col-xs-7 {
+  grid-column: span 7
+}
+
+.col-xs-6 {
+  grid-column: span 6
+}
+
+.col-xs-5 {
+  grid-column: span 5
+}
+
+.col-xs-4 {
+  grid-column: span 4
+}
+
+.col-xs-3 {
+  grid-column: span 3
+}
+
+.col-xs-2 {
+  grid-column: span 2
+}
+
+.col-xs-1 {
+  grid-column: span 1
+}
+
+/*----------------------------------------------
+Estilos para los Botones al estilo d Boostrap
+--------------------------------------------------*/
+
+.btn {
+  display: inline-block;
+  padding: 5px 8px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+
+
+.btn-primary {
+  font-size: 0.6rem;
+  color: #fff;
+  background-color: #3c8dbc;
+  border-color: #367fa9;
+}
+
+.btn-primary:hover {
+  color: #3c8dbc;
+  background-color: #fff;
+  font-weight: bold;
+  border-color: #fff;
+}
+
+.btn-danger {
+  font-size: 0.6rem;
+  color: #fff;
+  background-color: #dd4b39;
+  border-color: #d73925;
+}
+
+.btn-danger:hover {
+  color: #dd4b39;
+  background-color: #fff;
+  font-weight: bold;
+  border-color: #fff;
+}
+
+.btn-success {
+  font-size: 0.6rem;
+  color: #fff;
+  background-color: #00a65a;
+  border-color: #008d4c;
+}
+
+.btn-success:hover {
+  font-weight: bold;
+  color: #00a65a;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+.btn-info {
+  font-size: 0.6rem;
+  color: #fff;
+  background-color: #00c0ef;
+  border-color: #00acd6;
+}
+
+.btn-info:hover {
+  font-weight: bold;
+  color: #00c0ef;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn-warning {
+  font-size: 0.6rem;
+  color: #fff;
+  background-color: #ffa600;
+  border-color: #ffa600cc;
+}
+
+.btn-warning:hover {
+  font-weight: bold;
+  color: #ffa600;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/*-----------------------------------
+Fin  de los Estilos de los Botones
+--------------------------------------*/
+
+/*-----------------------------------
+Estilo para la Vista del Formulario 
+al Estilo de Boostrap
+--------------------------------------*/
+.panel-body {
+  padding: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.content-wrapper {
+  margin-top: 1rem;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.label.estado {
+  padding: 0.2rem;
+  font-size: 0.6rem;
+}
+
+.horizontal-scroll-contenedor #formulario {
+  width: 252px;
+  height: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+/*--------------------------------------
+Estilo para la Tablas al estilo de Boostrap
+-----------------------------------------*/
+.horizontal-scroll-contenedor {
+  width: auto;
+  height: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.horizontal-scroll-contenedor #tbllistado {
+  width: 252px;
+  height: auto;
+  display: inline-block;
+}
+
+.table {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+th {
+  text-align: left;
+}
+
+.table-bordered {
+  width: 100%;
+  height: auto;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.table-hover>tbody>tr:hover {
+  background-color: #fafafab0;
+}
+
+.table-condensed>tbody>tr>td,
+.table-condensed>tbody>tr>th,
+.table-condensed>tfoot>tr>td,
+.table-condensed>tfoot>tr>th,
+.table-condensed>thead>tr>td,
+.table-condensed>thead>tr>th {
+  padding: 5px;
+}
+
+
+/*------------------------------------------------------
+Estilos Propios Para la Paletas de Colores
+--------------------------------------------------------*/
+.bg-green {
+  background-color: #2ecc40;
+}
+
+.bg-black {
+  background-color: #111;
+}
+
+.bg-gray {
+  background-color: #aaa;
+}
+
+.bg-silver {
+  background-color: #ddd;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-aqua {
+  background-color: #7fdbff;
+}
+
+.bg-blue {
+  background-color: #0074d9;
+}
+
+.bg-navy {
+  background-color: #001f3f;
+}
+
+.bg-teal {
+  background-color: #39cccc;
+}
+
+.bg-olive {
+  background-color: #3d9970;
+}
+
+.bg-lime {
+  background-color: #01ff70;
+}
+
+.bg-yellow {
+  background-color: #ffdc00;
+}
+
+.bg-orange {
+  background-color: #ff851b;
+}
+
+.bg-red {
+  background-color: #ff4136;
+}
+
+.bg-fuchsia {
+  background-color: #f012be;
+}
+
+.bg-purple {
+  background-color: #b10dc9;
+}
+
+.bg-maroon {
+  background-color: #85144b;
+}
+
+.bg-darken-1 {
+  background-color: rgba(0, 0, 0, .0625);
+}
+
+.bg-darken-2 {
+  background-color: rgba(0, 0, 0, .125);
+}
+
+.bg-darken-3 {
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.bg-darken-4 {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+/*------------------------------------------
+Estilo para el color de la fuente 
+--------------------------------------------*/
+.text-white {
+  color: #fFF;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-red {
+  color: red;
+}
+
+
+/*--------------------------------------------------------
+Estilos para Cuerpo Administracion
+----------------------------------------------------------*/
+.principal .wrapper {
+  background-color: #f9fafc;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: static;
+  overflow: hidden;
+}
+
+.wrapper:after {
+  clear: both;
+}
+
+.wrapper:before,
+.wrapper:after {
+  content: " ";
+  display: table;
+}
+
+/*-----------------------------------------------------
+Fin de los Estilos del Cuerpo de Administracion
+-----------------------------------------------------*/
+
+
+/*----------------------------------------------------
+Estilo para el Navbar Superior
+------------------------------------------------------*/
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.principal .main-header {
+  background-color: #3c8dbc;
+}
+
+.main-header>.navbar {
+  transition: margin-left .3s ease-in-out;
+  margin-bottom: 0;
+  margin-left: 220px;
+  margin-right: 1rem;
+  border: none;
+  min-height: 50px;
+  border-radius: 0;
+}
+
+.nav {
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav {
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav>li {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.nav>li:hover {
+  font-weight: bold;
+}
+
+/* ----------------------------------------
+Estilo para el menu pricipal 
+------------------------------------------ */
+#btn-menu {
+  display: none;
+}
+
+/*Manipulacion del boton del Menu*/
+header label {
+  display: none;
+  width: 30px;
+}
+
+header lable:hover {
+  cursor: pointer;
+  background: rgba(255, 0, 0, 0.6);
+}
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+
+}
+
+.menu li {
+  border-right: 1px solid rgb(25, 80, 115);
+}
+
+.menu li:hover {
+  background: rgba(255, 0, 0, 0.6);
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+}
+
+
+
+/*-----------------------------------------
+Fin de los Estilos del menu principal
+-------------------------------------------*/
+
+/*-------------------------------------------------------
+Estilo para la Pagina Principal 
+---------------------------------------------------------*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*------------------------------
+Fin de los Estilos de la Pagina Principal
+--------------------------------*/
+
+
+
+/*-----------------------
+Estilo para Footer
+-----------------------*/
+.footer {
+  height: 50px;
+  background-color: #3c8dbc;
+  color: white;
+  font-style: italic;
+  font-size: 1em;
+  height: 10vh;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer .container p {
+  text-align: center;
+}
+
+.footer .container p span {
+  font-weight: bold;
+}
+
+/*---------------------------
+Fin de los Estilos de Footer
+------------------------------*/
+
+
+
+/*-------------------------------------------
+Medias query para los Distintos Tamaños de Pantallas
+----------------------------------------------*/
+@media(min-width: 375px) {
+  .horizontal-scroll-contenedor #tbllistado {
+    width: 306px;
+  }
+
+  .horizontal-scroll-contenedor #formulario {
+    width: 319px;
+  }
+
+}
+
+@media(min-width: 425px) {
+  .horizontal-scroll-contenedor #tbllistado {
+    width: 355px;
+  }
+
+  .horizontal-scroll-contenedor #formulario {
+    width: 106%;
+  }
+}
+
+@media(max-width:768px) {
+  header label {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .menu {
+    margin-top: 10.5rem;
+    position: absolute;
+    background: rgb(44, 125, 176);
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.3s;
+    z-index: 1030;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    border-top: 10px solid rgb(25, 80, 115);
+  }
+
+  #btn-menu:checked~.menu {
+    margin-left: 0;
+  }
+
+  .main-header>.navbar {
+    margin-left: 0;
+    margin-right: 1rem;
+
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+  .col-sm-12 {
+    grid-column: span 12;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-1 {
+    grid-column: span 1;
+    float: left;
+    width: 50%;
+  }
+
+  /*---------------------------------
+  Estilo del Menu Laterar de Usuario
+  ---------------------------------*/
+  .navbar-nav {
+    margin: 0;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+
+
+
+  /*-----------------------------
+Estilo del contenido en vista 720
+-------------------------------*/
+  .horizontal-scroll-contenedor #tbllistado {
+    display: table;
+    width: 90%;
+  }
+
+  .horizontal-scroll-contenedor #formulario {
+    text-align: left;
+    display: inline;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  .col-md-12 {
+    grid-column: span 12;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-1 {
+    grid-column: span 1;
+    float: left;
+    width: 50%;
+  }
+
+  .content-wrapper .content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+  .col-lg-12 {
+    grid-column: span 12;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+    float: left;
+    width: 50%;
+  }
+
+  .col-lg-1 {
+    grid-column: span 1;
+    float: left;
+    width: 50%;
+  }
+}
